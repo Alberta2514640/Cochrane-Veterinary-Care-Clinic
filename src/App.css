@@ -75,6 +75,12 @@
   mask-image: radial-gradient(at center, rgb(138, 48, 48) 66%, transparent 70%);
 }
 
+.Stock-Image {
+  height: 20vmin;
+  pointer-events: none;
+  mask-image: radial-gradient(at center, rgb(138, 48, 48) 66%, transparent 70%);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
