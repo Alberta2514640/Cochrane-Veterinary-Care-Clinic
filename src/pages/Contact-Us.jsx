@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+const ContactUs = () => {
     return (
         <div>
             <h1> Contact Us Website Under Construction</h1>
@@ -24,4 +24,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default ContactUs;

@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,7 +13,7 @@ import image7 from '../assets/Stock7.png';
 import image8 from '../assets/Stock8.png';
 import image9 from '../assets/Stock9.png';
 
-const Home = () => {
+const Services = () => {
     return (
         <Container>
             <h1>Services at Cochrane Veterinary Care Clinic Under Construction</h1>
@@ -104,4 +105,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Services;

@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import image from '../assets/BlackLabPhoto.png';
 
-const Home = () => {
+const AboutUs = () => {
     return (
         <Container>
             <h1> About Us</h1>
@@ -26,4 +26,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default AboutUs;
