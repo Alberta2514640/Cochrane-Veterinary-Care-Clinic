@@ -7,6 +7,74 @@
   pointer-events: none;
 }
 
+.Corner-Logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  .Corner-Logo {
+    display: none;
+  }
+}
+
+.Website-Title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-right: 15px; /* Slightly increased margin for a cleaner look */
+  margin-left: 15px; /* Uniform margin for symmetry */
+  padding: 5px 10px; /* Padding to make each list item look like a button or tab */
+  border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+.parent {
+  display: flex;
+  height: 300px; /* Or whatever */
+}
+
+.child {
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto;  /* Magic! */
+}
+
+.Container {
+  /* Add styles for the container here */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Row {
+  /* Add styles for the row here */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Col {
+  /* Add styles for the column here */
+  flex: 1;
+  padding: 10px;
+}
+
+.Home-Image {
+  height: 50vmin;
+  pointer-events: none;
+  mask-image: radial-gradient(at center, rgb(138, 48, 48) 60%, transparent 70%);
+}
+
+.AboutUs-Image {
+  height: 50vmin;
+  pointer-events: none;
+  mask-image: radial-gradient(at center, rgb(138, 48, 48) 66%, transparent 70%);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +82,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #717d95;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -58,6 +126,8 @@ ul {
 
 li {
   display: inline-block; /* Change to inline-block for better control over spacing and alignment */
+  font-size: 30px;
+  color: #000000;
   margin-right: 15px; /* Slightly increased margin for a cleaner look */
   margin-left: 15px; /* Uniform margin for symmetry */
   padding: 5px 10px; /* Padding to make each list item look like a button or tab */
@@ -81,4 +151,16 @@ a {
 
 a:hover {
   color: blue;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
