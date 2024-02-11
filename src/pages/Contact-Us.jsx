@@ -9,14 +9,10 @@ const ContactUs = () => {
             <h2>Cochrane Veterinary Care Clinic</h2>
             <p><strong>Address:</strong> 57 West Aarsby Road, Cochrane, Alberta, T4C 1M1</p>
             <p><strong>Phone:</strong> (403) 932-4138</p>
-            <p><strong>Email:</strong> Dale@CochraneVetrinaryCareClinic.ca</p>
 
             <h3>Hours of Operation:</h3>
             <p>Monday to Friday: 8:30 AM - 5:30 PM</p>
             <p>Saturday & Sunday: Closed</p>
-
-            <h3>Emergency Contact:</h3>
-            <p>If you have an emergency outside of our regular business hours, please contact [Insert Emergency Contact Info]</p>
 
             <p>We look forward to hearing from you and taking care of your beloved pets!</p>
 

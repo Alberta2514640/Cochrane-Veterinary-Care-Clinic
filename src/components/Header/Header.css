@@ -1,0 +1,22 @@
+.Corner-Logo {
+    height: 5vmin;
+    margin: 1vmin;
+    pointer-events: none;
+  }
+
+  
+@media (max-width: 1000px) {
+    .Corner-Logo {
+      display: none;
+    }
+  }
+
+.Website-Title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin: 10px;
+    padding: 0;
+    padding: 5px 5px; /* Padding to make each list item look like a button or tab */
+    border-radius: 5px; /* Rounded corners for a modern look */
+}

@@ -2,34 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.Corner-Logo {
-  height: 5vmin;
-  margin-top: 1vmin;
-  pointer-events: none;
-}
-
-@media (max-width: 1000px) {
-  .Corner-Logo {
-    display: none;
-  }
-}
-
-.Website-Title{
-  font-size: 30px;
-  font-weight: bold;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-  margin-right: 15px; /* Slightly increased margin for a cleaner look */
-  margin-left: 15px; /* Uniform margin for symmetry */
-  padding: 5px 10px; /* Padding to make each list item look like a button or tab */
-  border-radius: 5px; /* Rounded corners for a modern look */
-}
 
 .parent {
   display: flex;
@@ -103,14 +75,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* Header.css */
 nav {
@@ -122,10 +86,9 @@ nav {
   /* Rest of your styling */
 }
 
-
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 5px;
   padding: 0;
   display: flex;
 }
@@ -137,7 +100,7 @@ li {
   color: #000000;
   margin-right: 15px; /* Slightly increased margin for a cleaner look */
   margin-left: 15px; /* Uniform margin for symmetry */
-  padding: 5px 10px; /* Padding to make each list item look like a button or tab */
+  padding: 5px 5px; /* Padding to make each list item look like a button or tab */
   border-radius: 5px; /* Rounded corners for a modern look */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
   font-weight: bold; /* Optional: Makes the text a bit bolder for better readability */
