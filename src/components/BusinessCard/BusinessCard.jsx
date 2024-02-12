@@ -9,13 +9,12 @@ class BusinessCard extends Component {
             "BEGIN:VCARD",
             "VERSION:3.0",
             `N:${data.name}`,
-            `ADR:${data.address.replace(/,/g, ';')}`, // Simplistic way to handle address components; adjust as needed
+            `ADR:${data.address.replace(/,/g, ';')}`, 
             `TEL:${data.phone}`,
-            // Assuming data.logoURL is a direct link to an image, otherwise, you might need to handle this differently
             `PHOTO;TYPE=JPEG;VALUE=URI:${data.logoURL}`, 
             "END:VCARD"
         ].join("\r\n");
-        
+
         return (
             <div className="card">
                 <h2>{data.name}</h2>
