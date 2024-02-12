@@ -1,0 +1,10 @@
+{
+    "name": "Cochrane Veterinary Care Clinic",
+    "address": "57 West Aarsby Road, Cochrane, Alberta, T4C 1M1",
+    "phone": "(403) 932-4138",
+    "hours": {
+      "weekdays": "Monday to Friday: 8:30 AM - 5:30 PM",
+      "weekends": "Saturday & Sunday: Closed"
+    },
+    "logoURL": "https://storage.googleapis.com/staticphotos/DaleClinicLogo.jpg"
+  }
