@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 import './BusinessCard.css';
 import data from './Business.json'; 
 
@@ -16,25 +20,38 @@ class BusinessCard extends Component {
         ].join("\r\n");
 
         return (
-            <div className="card">
-                <h2>{data.name}</h2>
-                <p><strong>Address:</strong> {data.address}</p>
-                <p><strong>Phone:</strong> {data.phone}</p>
+            <Container>
+                <Row>
+                    <div className="card">
+                        <Col>
+                            
+                                <h2>{data.name}</h2>
+                                <p><strong>Address:</strong> {data.address}</p>
+                                <p><strong>Phone:</strong> <a href={`tel:${data.phone}`}>{data.phone}</a></p>
 
-                <h3>Hours of Operation:</h3>
-                <p>{data.hours.weekdays}</p>
-                <p>{data.hours.weekends}</p>
+                                <h3>Hours of Operation:</h3>
+                                <p>{data.hours.weekdays}</p>
+                                <p>{data.hours.weekends}</p>
 
-                <div style={{ height: "auto", margin: "0 auto", maxWidth: 128, width: "100%" }}>
-                    <QRCode
-                        size={128}
-                        style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                        value={vCardInfo}
-                        viewBox={`0 0 128 128`}
-                    />
-                </div>
 
-            </div>
+
+                            
+                        </Col>
+                        <Col style={{ display: "flex", alignItems: "center" }}>
+                            <div style={{ height: "auto", margin: "0 auto", width: "100%" }}>
+                                <QRCode
+                                    size={128}
+                                    style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                                    value={vCardInfo}
+                                    viewBox={`0 0 128 128`}
+                                />
+                            </div>
+                        </Col>
+                    </div>
+                </Row>
+
+            </Container>
+
         );
     }
 }

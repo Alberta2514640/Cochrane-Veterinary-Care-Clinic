@@ -3,22 +3,20 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import image from '../assets/LabPhoto.png';
+import BackgroundVideo from '../components/BackgroundVideo/BackgroundVideo';
 
 const Home = () => {
     return (
-        <Container>
+        <Container style={{ position: 'relative', zIndex: 2 }}>
             <Row>
-                <Col>
-                    <img className="Home-Image" src={image} alt="Logo" />
-                </Col>
+                <BackgroundVideo style={{ position: 'absolute', zIndex: 1 }}/>
                 <Col>
                     <div>
-                        
                         <h3>This Website is Under Construction</h3>
                         <p>
                             Please refer to the facebook page for reliable up to date information.
                         </p>
-                        <p style={{textAlign: 'left'}}>
+                        <p style={{margin: 25, textAlign: 'left'}}>
                             We are a small animal clinic that focuses on dog and cat health care.
                             We have 2 part time vets: Dr. Dale Atkin & Dr. Kristen Ficzycz.
                             Our support staff includes four Registered Veterinary Technicians: Jeanine, Sharon, Paula & Kathryn.

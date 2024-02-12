@@ -1,0 +1,14 @@
+.background-video video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Move the video to be at the back in the z layers */
+}
+
+

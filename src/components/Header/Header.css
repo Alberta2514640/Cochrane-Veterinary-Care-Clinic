@@ -1,6 +1,6 @@
 .Corner-Logo {
     height: 5vmin;
-    margin: 1vmin;
+    margin: 15px;
     pointer-events: none;
   }
 
@@ -15,8 +15,44 @@
     font-size: 30px;
     font-weight: bold;
     color: #000000;
-    margin: 10px;
+    margin: 15px;
     padding: 0;
     padding: 5px 5px; /* Padding to make each list item look like a button or tab */
     border-radius: 5px; /* Rounded corners for a modern look */
 }
+
+/* Header.css */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0f0f0; 
+    z-index: 1000; /* Ensures the header stays above other content */
+    /* Rest of your styling */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+  }
+
+li {
+    display: inline-block; /* Change to inline-block for better control over spacing and alignment */
+    font-size: 30px;
+    color: #000000;
+    margin-right: 15px; /* Slightly increased margin for a cleaner look */
+    margin: 5px; /* Uniform margin for symmetry */
+    padding: 15px 15px; /* Padding to make each list item look like a button or tab */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    font-weight: bold; /* Optional: Makes the text a bit bolder for better readability */
+    background-color: #f0f0f0; /* Same background as the nav bar for consistency */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
+  }
+  
+  li:hover {
+    background-color: #d0d0d0; /* Slightly darker on hover for feedback */
+    color: rgb(75, 75, 226); /* Changes color on hover, as with your 'a' elements */
+  }

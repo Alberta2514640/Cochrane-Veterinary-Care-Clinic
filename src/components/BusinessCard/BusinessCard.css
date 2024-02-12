@@ -1,4 +1,7 @@
 .card {
+    display: grid;
+    grid-template-columns: 4fr 1fr; /* Sets the first column to be three times larger than the second column */
+    grid-gap: 5px; /* Adds a gap of 20px between grid items */
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -17,3 +20,4 @@
     margin-bottom: 10px;
     line-height: 1.6;
 }
+

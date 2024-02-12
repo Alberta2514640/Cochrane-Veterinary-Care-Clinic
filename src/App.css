@@ -75,45 +75,6 @@
   color: #61dafb;
 }
 
-
-/* Header.css */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #f0f0f0; /* Example background color */
-  z-index: 1000; /* Ensures the header stays above other content */
-  /* Rest of your styling */
-}
-
-ul {
-  list-style-type: none;
-  margin: 5px;
-  padding: 0;
-  display: flex;
-}
-
-
-li {
-  display: inline-block; /* Change to inline-block for better control over spacing and alignment */
-  font-size: 30px;
-  color: #000000;
-  margin-right: 15px; /* Slightly increased margin for a cleaner look */
-  margin-left: 15px; /* Uniform margin for symmetry */
-  padding: 5px 5px; /* Padding to make each list item look like a button or tab */
-  border-radius: 5px; /* Rounded corners for a modern look */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
-  font-weight: bold; /* Optional: Makes the text a bit bolder for better readability */
-  background-color: #f0f0f0; /* Same background as the nav bar for consistency */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
-}
-
-li:hover {
-  background-color: #e0e0e0; /* Slightly darker on hover for feedback */
-  color: blue; /* Changes color on hover, as with your 'a' elements */
-}
-
-
 a {
   text-decoration: none;
   color: black;

@@ -6,8 +6,7 @@ import image from '../assets/BlackLabPhoto.png';
 
 const AboutUs = () => {
     return (
-        <Container>
-            <h1> About Us</h1>
+        <Container style={{ marginTop: '100px' }}>
             <Row>
                 <Col>
                 <img className="AboutUs-Image" src={image} alt="Logo" />
