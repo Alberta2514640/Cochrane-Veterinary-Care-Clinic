@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import image from '../../assets/logo.jpg';
 import './Header.css';
+import AnimatedLogo from './AnimatedLogo'
 import { SocialIcon } from 'react-social-icons'
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
     <nav>
       <ul className="nav-list">
         <div className="nav-items">
-          <img className="Corner-Logo" src={image} alt="Logo" />
+          <AnimatedLogo image={image} />
           <p className="Website-Title"> Cochrane Veterinary Care Clinic</p>
           <li><Link to="/">Home</Link></li>
           {/* <li><Link to="/about-us">About Us</Link></li> */}
